@@ -3,10 +3,10 @@ import csv
 import time
 
 # Load the quantized model (fast + small)
-model = YOLO("C:/Users/LENOVO/yolov8n_int8.onnx")
+model = YOLO("yolov8n_int8.onnx")
 
-video_path = "C:/Users/LENOVO/Downloads/tst.mp4"
-output_csv = "C:/Users/LENOVO/Downloads/detection_log.csv"
+video_path = "sample_video.mp4"
+output_csv = "detection_log.csv"
 
 # Run detection on every frame, stream=True processes frame-by-frame instead of all at once
 results = model(video_path, stream=True)

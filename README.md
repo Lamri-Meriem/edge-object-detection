@@ -39,6 +39,9 @@ console demo.
 need domain-specific fine-tuning for production use, which would be a natural next step.
 
 ## Setup
+`ash
+pip install ultralytics onnx onnxruntime onnxslim
+``
 ## Usage
 ```python
 python dashboard.py
@@ -51,3 +54,7 @@ Python, Ultralytics YOLOv8, ONNX, ONNX Runtime (quantization)
 - Fine-tune on domain-specific data (surveillance or agricultural footage)
 - Add zone-based intrusion/access-control logic
 - Test on actual edge hardware (Raspberry Pi / Jetson) for realistic FPS numbers
+
+## Sample video
+The demo video used for benchmarking is a free stock clip from Pexels:
+https://www.pexels.com/video/black-and-white-waterfront-portrait-in-dusseldorf-38705483/
